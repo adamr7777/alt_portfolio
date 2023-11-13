@@ -9,7 +9,7 @@ import {Nav, NavLink, NavbarContainer, Span, NavLogo, NavItems,
 
 import personalInfo from '../../assets/content/info';
 
-export default function Navbar() {
+export default function Navbar() { //change it
     const [isOpen, setIsOpen] = useState(false);
     const theme = useTheme();
     return (
