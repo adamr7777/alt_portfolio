@@ -1,6 +1,11 @@
 {
   "personalInfo": {
     "name": "Adam Razmus",
-    "linkedIn": "https://www.linkedin.com/in/rishav-chanda-b89a791b3/"
+    "linkedIn": "https://www.linkedin.com/in/adam-r-562618263/",
+    "title": [
+      "Full Stack Developer"
+    ],
+    "description": "I'm a great web developer.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "cv": "https://drive.google.com/file/d/1ErQ1Em1kTpEHJsI5iAyX47SuoPWTTy1r/view?usp=sharing"
   }
 }

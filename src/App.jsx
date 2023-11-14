@@ -2,9 +2,11 @@
 import React from 'react';
 import {BrowserRouter as Router} from 'react-router-dom';
 import {ThemeProvider} from "styled-components";
+import styled from 'styled-components';
 
 import './globalStyles/styles.css';
-import Navbar from "./Components/Navbar/Navbar";
+import Navbar from './Components/Navbar/Navbar';
+import About from './PageElements/About/About';
 
 const darkTheme = {         //move to a separate file as a styled component
     bg: '#1C1C27',
@@ -19,12 +21,21 @@ const darkTheme = {         //move to a separate file as a styled component
     black: '#000000'
 };
 
+const Body = styled.div`
+  background-color: ${({ theme }) => theme.bg};
+  width: 100%;
+  overflow-x: hidden;
+`
+
 
 function App() {
     return (
         <ThemeProvider theme={darkTheme}>
             <Router>
                 <Navbar />
+                <Body>
+                    <About />
+                </Body>
             </Router>
         </ThemeProvider>
         

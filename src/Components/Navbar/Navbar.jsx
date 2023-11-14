@@ -5,11 +5,11 @@ import {FaBars} from 'react-icons/fa';
 // import { Close, CloseRounded } from '@mui/icons-material';
 
 import {Nav, NavLink, NavbarContainer, Span, NavLogo, NavItems, 
-    GitHubButton, ButtonContainer, MobileIcon, MobileMenu, MobileNavLogo, MobileLink} from './StyledComponents'
+    LinkedInButton, ButtonContainer, MobileIcon, MobileMenu, MobileNavLogo, MobileLink} from './StyledComponents'
 
-import personalInfo from '../../assets/content/info';
+import {personalInfo} from '../../assets/content/info';
 
-export default function Navbar() { //change it
+export default function Navbar() { 
     const [isOpen, setIsOpen] = useState(false);
     const theme = useTheme();
     return (
@@ -32,7 +32,7 @@ export default function Navbar() { //change it
                     <NavLink href='#education'>Education</NavLink>
                 </NavItems>
                 <ButtonContainer>
-                    <GitHubButton href={personalInfo.linkedIn} target="_blank">Github Profile</GitHubButton>
+                    <LinkedInButton href={personalInfo.linkedIn} target='_blank'>LinkedIn Profile</LinkedInButton>
                 </ButtonContainer>
                 {
                 isOpen &&
@@ -52,10 +52,10 @@ export default function Navbar() { //change it
                     <MobileLink href='#education' onClick={() => {
                     setIsOpen(!isOpen)
                     }}>Education</MobileLink>
-                    <GitHubButton style={{padding: '10px 16px',background: `${theme.primary}`, 
+                    <LinkedInButton style={{padding: '10px 16px',background: `${theme.primary}`, 
                         color: 'white',width: 'max-content'}} href={personalInfo.linkedIn} 
-                        target="_blank">Github Profile
-                    </GitHubButton>
+                        target='_blank'>LinkedIn Profile
+                    </LinkedInButton>
                 </MobileMenu>
                 }
             </NavbarContainer>
