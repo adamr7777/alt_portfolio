@@ -22,7 +22,7 @@ export default function Footer() {
           <NavLink href="#about">About</NavLink>
           <NavLink href="#skills">Skills</NavLink>
           <NavLink href="#projects">Projects</NavLink>
-          <NavLink href="#education">Education</NavLink>
+          <NavLink href='#contact'>Contact Me</NavLink>
         </Nav>
         <SocialMediaIcons>
           <SocialMediaIcon href={personalInfo.linkedIn} target="display"><LinkedInIcon /></SocialMediaIcon>

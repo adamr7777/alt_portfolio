@@ -1,8 +1,7 @@
 import React, {useState} from 'react'
 import {useTheme} from 'styled-components';
-// import from 'react-icons/di';
 import {FaBars} from 'react-icons/fa';
-// import { Close, CloseRounded } from '@mui/icons-material';
+
 
 import {Nav, NavLink, NavbarContainer, Span, NavLogo, NavItems, 
     LinkedInButton, ButtonContainer, MobileIcon, MobileMenu, MobileNavLogo, MobileLink} from './StyledComponents'
@@ -27,8 +26,8 @@ export default function Navbar() {
                     <NavLink href="#about">About</NavLink>
                     <NavLink href='#skills'>Skills</NavLink>
                     <NavLink href='#projects'>Projects</NavLink>
-                    <NavLink href='#education'>Education</NavLink>  
-                    {/* Contact */}
+                    {/* <NavLink href='#education'>Education</NavLink>   */}
+                    <NavLink href='#contact'>Contact Me</NavLink>
                     <NavLink href="#footer">Social</NavLink>
                 </NavItems>
                 <ButtonContainer>
