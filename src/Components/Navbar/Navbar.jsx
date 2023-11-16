@@ -15,10 +15,8 @@ export default function Navbar() {
     return (
         <Nav>
             <NavbarContainer>
-                <NavLogo to='/'>
-                    <a style={{ display: "flex", alignItems: "center", color: "white", marginBottom: '20;', cursor: 'pointer' }}>
-                        <Span>Portfolio</Span>
-                    </a>        {/*problematic, anchor tag inside the link */}
+                <NavLogo to='/' style={{ display: 'flex', alignItems: 'center', color: 'white', marginBottom: '20;', cursor: 'pointer' }}>
+                    <Span>Portfolio</Span>       
                 </NavLogo>
                 <MobileIcon>
                 <FaBars onClick={() => {
@@ -29,7 +27,9 @@ export default function Navbar() {
                     <NavLink href="#about">About</NavLink>
                     <NavLink href='#skills'>Skills</NavLink>
                     <NavLink href='#projects'>Projects</NavLink>
-                    <NavLink href='#education'>Education</NavLink>
+                    <NavLink href='#education'>Education</NavLink>  
+                    {/* Contact */}
+                    <NavLink href="#footer">Social</NavLink>
                 </NavItems>
                 <ButtonContainer>
                     <LinkedInButton href={personalInfo.linkedIn} target='_blank'>LinkedIn Profile</LinkedInButton>
@@ -37,7 +37,7 @@ export default function Navbar() {
                 {
                 isOpen &&
                 <MobileMenu isOpen={isOpen}>
-                    <MobileLink href="#about" onClick={() => {
+                    <MobileLink href='#about' onClick={() => {
                     setIsOpen(!isOpen)
                     }}>About</MobileLink>
                     <MobileLink href='#skills' onClick={() => {
@@ -52,7 +52,11 @@ export default function Navbar() {
                     <MobileLink href='#education' onClick={() => {
                     setIsOpen(!isOpen)
                     }}>Education</MobileLink>
-                    <LinkedInButton style={{padding: '10px 16px',background: `${theme.primary}`, 
+                    {/* Contact */}
+                    <MobileLink href='#footer' onClick={() => {
+                    setIsOpen(!isOpen)
+                    }}>Social</MobileLink>
+    '       '       <LinkedInButton style={{padding: '10px 16px',background: `${theme.primary}`, 
                         color: 'white',width: 'max-content'}} href={personalInfo.linkedIn} 
                         target='_blank'>LinkedIn Profile
                     </LinkedInButton>

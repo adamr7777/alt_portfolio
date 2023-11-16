@@ -8,6 +8,7 @@ import './globalStyles/styles.css';
 import Navbar from './Components/Navbar/Navbar';
 import About from './PageElements/About/About';
 import Skills from "./PageElements/Skills/Skills";
+import Footer from "./Components/Footer/Footer"; 
 
 const darkTheme = {         //move to a separate file as a styled component
     bg: '#1C1C27',
@@ -45,8 +46,9 @@ function App() {
                 <Body>
                     <About />
                     <Wrapper>
-
+                        <Skills />
                     </Wrapper>
+                    <Footer />
                 </Body>
             </Router>
         </ThemeProvider>
