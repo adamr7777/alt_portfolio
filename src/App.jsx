@@ -1,5 +1,5 @@
 
-import React from 'react';
+import React, {useState} from 'react';
 import {BrowserRouter as Router} from 'react-router-dom';
 import {ThemeProvider} from "styled-components";
 import styled from 'styled-components';
@@ -7,9 +7,11 @@ import styled from 'styled-components';
 import './globalStyles/styles.css';
 import Navbar from './Components/Navbar/Navbar';
 import About from './PageElements/About/About';
-import Skills from "./PageElements/Skills/Skills";
-import Footer from "./Components/Footer/Footer"; 
+import Skills from './PageElements/Skills/Skills';
 import Contact from './Components/Contact/Contact';
+import Projects from './PageElements/Projects/Projects';
+import ProjectDetails from './Components/ProjectDetails/ProjectDetails';
+import Footer from "./Components/Footer/Footer"; 
 
 const darkTheme = {         //move to a separate file as a styled component
     bg: '#1C1C27',
@@ -40,6 +42,7 @@ const Wrapper = styled.div`
 
 
 function App() {
+    const [openModal, setOpenModal] = useState({ state: false, project: null});
     return (
         <ThemeProvider theme={darkTheme}>
             <Router>
@@ -49,11 +52,14 @@ function App() {
                     <Wrapper>
                         <Skills />
                     </Wrapper>
-                    {/* Projects */}
+                    <Projects openModal={openModal} setOpenModal={setOpenModal} />
                     <Wrapper>
                         <Contact />
                     </Wrapper>
                     <Footer />
+                    {openModal.state &&
+                        <ProjectDetails openModal={openModal} setOpenModal={setOpenModal} />
+                    }
                 </Body>
             </Router>
         </ThemeProvider>

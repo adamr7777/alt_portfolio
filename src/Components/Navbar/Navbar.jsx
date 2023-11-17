@@ -26,8 +26,7 @@ export default function Navbar() {
                     <NavLink href="#about">About</NavLink>
                     <NavLink href='#skills'>Skills</NavLink>
                     <NavLink href='#projects'>Projects</NavLink>
-                    {/* <NavLink href='#education'>Education</NavLink>   */}
-                    <NavLink href='#contact'>Contact Me</NavLink>
+                    <NavLink href='#contact'>Contact Me!</NavLink>
                     <NavLink href="#footer">Social</NavLink>
                 </NavItems>
                 <ButtonContainer>
@@ -42,16 +41,12 @@ export default function Navbar() {
                     <MobileLink href='#skills' onClick={() => {
                     setIsOpen(!isOpen)
                     }}>Skills</MobileLink>
-                    <MobileLink href='#experience' onClick={() => {
-                    setIsOpen(!isOpen)
-                    }}>Experience</MobileLink>
                     <MobileLink href='#projects' onClick={() => {
                     setIsOpen(!isOpen)
                     }}>Projects</MobileLink>
-                    <MobileLink href='#education' onClick={() => {
+                    <MobileLink href='#contact' onClick={() => {
                     setIsOpen(!isOpen)
-                    }}>Education</MobileLink>
-                    {/* Contact */}
+                    }}>Contact Me!</MobileLink>
                     <MobileLink href='#footer' onClick={() => {
                     setIsOpen(!isOpen)
                     }}>Social</MobileLink>

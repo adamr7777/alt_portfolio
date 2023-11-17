@@ -92,6 +92,73 @@
           }
         ]
       }
+    ],
+    "projects": [
+      {
+        "id": 1,
+        "title": "Memes Manager",
+        "date": "May 2023 - August 2023",
+        "description": "Memes Manager",
+        "image": "/memesManagerImg.png",
+        "tags": [
+          "React Js",
+          "MongoDb",
+          "Node Js",
+          "Express Js"
+        ],
+        "github": "https://github.com/adamr7777/memesManager_frontend",
+        "webapp": "https://memes-manager.onrender.com/"
+      },
+      
+      {
+        "id": 2,
+        "title": "Grumpy Cat",
+        "date": "2023",
+        "description": "Grumpy Cat, placeholder text",
+        "image": "/GrumpyCatImg.png",
+        "tags": [
+          "React Js",
+          "MongoDb",
+          "Node Js",
+          "Express Js"
+        ],
+        "github": "www",
+        "webapp": "www"
+      },
+      
+      {
+        "id": 3,
+        "title": "Portfolio",
+        "date": "2023",
+        "description": "Portfolio, placeholder text",
+        "image": "/portfolioImg.png",
+        "tags": [
+          "React Js", 
+          "Node JS"
+        ],
+        "github": "www",
+        "webapp": "www"
+      },
+      {
+        "id": 4,
+        "title": "Weather App",
+        "date": "2023",
+        "description": "Weather App, placeholder text",
+        "image": "/weatherAppImg.png",
+        "tags": [
+          "Local Storage", 
+          "Node JS"
+        ],
+        "category": "web app",
+        "github": "www",
+        "webapp": "www"
+      }
     ]
   }
 }
+
+
+
+
+  
+    
