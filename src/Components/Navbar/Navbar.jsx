@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import {useTheme} from 'styled-components';
 import {FaBars} from 'react-icons/fa';
+import {Storm} from '@mui/icons-material';
 
 
 import {Nav, NavLink, NavbarContainer, Span, NavLogo, NavItems, 
@@ -11,11 +12,25 @@ import {personalInfo} from '../../assets/content/info';
 export default function Navbar() { 
     const [isOpen, setIsOpen] = useState(false);
     const theme = useTheme();
+
+    
+    const stormLogoStyles = {
+        'color': theme.primary
+    };
+    const navLogoStyles = {
+        display: 'flex', 
+        fontSize: '20', 
+        alignItems: 'center', 
+        color: 'white', 
+        marginBottom: '20;', 
+        cursor: 'pointer'
+    };
+    
     return (
         <Nav>
             <NavbarContainer>
-                <NavLogo to='/' style={{ display: 'flex', alignItems: 'center', color: 'white', marginBottom: '20;', cursor: 'pointer' }}>
-                    <Span>Portfolio</Span>       
+                <NavLogo to='/' style={navLogoStyles}>
+                    <Storm style={stormLogoStyles}/><Span>MyWorks</Span>       
                 </NavLogo>
                 <MobileIcon>
                 <FaBars onClick={() => {

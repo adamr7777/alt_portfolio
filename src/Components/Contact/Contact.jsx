@@ -44,6 +44,7 @@ export default function Contact() {
           onClose={()=>setOpen(false)}
           message='Email sent successfully!'
           severity='success'
+          anchorOrigin={{ vertical: 'center', horizontal: 'center' }}
         />
       </Wrapper>
     </Container>
