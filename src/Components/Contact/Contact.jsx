@@ -29,7 +29,7 @@ export default function Contact() {
     <Container id='contact'>
       <Wrapper>
         <Title>Contact</Title>
-        <Desc>Contact me if placeholder text!</Desc>
+        <Desc>Contact me!</Desc>
         <ContactForm ref={form} onSubmit={handleSubmit}>
           <ContactTitle>Email Me 🚀</ContactTitle>
           <ContactInput placeholder='Your Email' name='from_email' />
