@@ -10,11 +10,12 @@ import {Container, Wrapper, Title, Desc, SkillsContainer,
 
 
 export default function Skills() {
+  const descText = 'Here are some of my skills on which I have been working on.';
   return (
     <Container id="skills">
       <Wrapper>
         <Title>Skills</Title>
-        <Desc>My skills, long description and placeholder text:
+        <Desc>{descText}
         </Desc>
         <SkillsContainer>
           {skills.map((skill) => (

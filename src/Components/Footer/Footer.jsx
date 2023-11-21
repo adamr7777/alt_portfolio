@@ -17,10 +17,11 @@ import {personalInfo} from '../../assets/content/info';
 export default function Footer() {
   const phonePrompt = 'phone';
   const emailPrompt = 'email';
-  const handlePopup = async (media)=> {
+
+  const handlePopUp = async (media)=> {
+    const contact = media === phonePrompt? personalInfo.phone : personalInfo.email;
+    const message = `${contact} has been copied to the clipboard`;
     try {
-      const contact = media === 'phone'? personalInfo.phone : personalInfo.email;
-      const message = `${contact} has been copied to the clipboard`;
       await navigator.clipboard.writeText(contact);
       alert(message);
     }catch(error) {
@@ -41,8 +42,8 @@ export default function Footer() {
         <SocialMediaIcons>
           <SocialMediaIcon href={personalInfo.linkedIn} target="display"><LinkedInIcon /></SocialMediaIcon>
           <SocialMediaIcon href={personalInfo.github} target="display"><GitHubIcon /></SocialMediaIcon>
-          <SocialMediaIcon onClick={()=> handlePopup(emailPrompt)} target="display"><EmailIcon /></SocialMediaIcon>
-          <SocialMediaIcon onClick={()=> handlePopup(phonePrompt)} target="display"><PhoneIcon /></SocialMediaIcon>
+          <SocialMediaIcon onClick={()=> handlePopUp(emailPrompt)} target="display"><EmailIcon /></SocialMediaIcon>
+          <SocialMediaIcon onClick={()=> handlePopUp(phonePrompt)} target="display"><PhoneIcon /></SocialMediaIcon>
         </SocialMediaIcons>
         <Copyright>
           &copy; 2023 Adam Razmus. All rights reserved.
