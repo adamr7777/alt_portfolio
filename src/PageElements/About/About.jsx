@@ -5,7 +5,7 @@ import AboutBgAnimation from '../../Components/AboutBgAnimation/AboutGbAnimation
 
 import {AboutContainer, AboutBg, AboutLeftContainer, Img, AboutRightContainer, 
     AboutInnerContainer, TextLoop, Title, Span, SubTitle, CvButton} from './StyledComponents';
-import mainImg from '../../assets/mainImage.jpg';
+import mainImg from '/mainImage.jpg';
 import {personalInfo} from '../../assets/content/info';
 
 export default function AboutSection() {

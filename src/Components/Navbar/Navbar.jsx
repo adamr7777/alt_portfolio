@@ -22,7 +22,7 @@ export default function Navbar() {
         fontSize: '20', 
         alignItems: 'center', 
         color: 'white', 
-        marginBottom: '20;', 
+        marginBottom: '20,', 
         cursor: 'pointer'
     };
     
@@ -38,11 +38,11 @@ export default function Navbar() {
                 }} />
                 </MobileIcon>
                 <NavItems>
-                    <NavLink href="#about">About</NavLink>
+                    <NavLink href='#about'>About</NavLink>
                     <NavLink href='#skills'>Skills</NavLink>
                     <NavLink href='#projects'>Projects</NavLink>
                     <NavLink href='#contact'>Contact Me!</NavLink>
-                    <NavLink href="#footer">Social</NavLink>
+                    <NavLink href='#footer'>Social</NavLink>
                 </NavItems>
                 <ButtonContainer>
                     <LinkedInButton href={personalInfo.linkedIn} target='_blank'>LinkedIn Profile</LinkedInButton>

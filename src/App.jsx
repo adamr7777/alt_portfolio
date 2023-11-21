@@ -1,7 +1,7 @@
 
 import React, {useState} from 'react';
 import {BrowserRouter as Router} from 'react-router-dom';
-import {ThemeProvider} from "styled-components";
+import {ThemeProvider} from 'styled-components';
 import styled from 'styled-components';
 
 import './globalStyles/styles.css';
@@ -11,9 +11,9 @@ import Skills from './PageElements/Skills/Skills';
 import Contact from './Components/Contact/Contact';
 import Projects from './PageElements/Projects/Projects';
 import ProjectDetails from './Components/ProjectDetails/ProjectDetails';
-import Footer from "./Components/Footer/Footer"; 
+import Footer from './Components/Footer/Footer'; 
 
-const darkTheme = {         //move to a separate file as a styled component
+const darkTheme = {         
     bg: '#1C1C27',
     bgLight: '#1C1E27',
     primary: '#854CE6',
@@ -42,7 +42,7 @@ const Wrapper = styled.div`
 
 
 function App() {
-    const [openModal, setOpenModal] = useState({ state: false, project: null});
+    const [openModal, setOpenModal] = useState({state: false, project: null});
     return (
         <ThemeProvider theme={darkTheme}>
             <Router>

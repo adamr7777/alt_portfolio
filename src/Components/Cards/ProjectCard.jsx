@@ -8,8 +8,8 @@ export default function ProjectCards({project, setOpenModal}) {
         <Card onClick={() => setOpenModal({state: true, project: project})}>
             <Image src={project.image}/>
             <Tags>
-                {project.tags?.map((tag) => (
-                <Tag>{tag}</Tag>
+                {project.tags?.map((tag, index) => (
+                <Tag key={index}>{tag}</Tag>
                 ))}
             </Tags>
             <Details>
@@ -18,8 +18,8 @@ export default function ProjectCards({project, setOpenModal}) {
                 <Description>{project.description}</Description>
             </Details>
             <Members>
-                {project.member?.map((member) => (
-                    <Avatar src={member.img}/>
+                {project.member?.map((member, index) => (
+                    <Avatar key={index} src={member.img}/>
                 ))}
             </Members>
             <Button>View Project</Button>

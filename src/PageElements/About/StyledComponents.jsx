@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import _default from "../../themes/default";
+import styled from 'styled-components';
+import _default from '../../themes/default';
 
 export const AboutContainer = styled.div`
   background: ${({ theme }) => theme.card_light};

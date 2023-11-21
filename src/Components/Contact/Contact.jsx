@@ -40,11 +40,11 @@ export default function Contact() {
         </ContactForm>
         <Snackbar
           open={open}
-          autoHideDuration={6000}
+          // autoHideDuration={6000}
           onClose={()=>setOpen(false)}
           message='Email sent successfully!'
           severity='success'
-          anchorOrigin={{ vertical: 'center', horizontal: 'center' }}
+          anchorOrigin={{ vertical: 'bottom', horizontal: 'center' }}
         />
       </Wrapper>
     </Container>

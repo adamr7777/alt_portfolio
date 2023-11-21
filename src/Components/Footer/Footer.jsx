@@ -34,16 +34,16 @@ export default function Footer() {
       <FooterWrapper>
         <Logo>Adam Razmus</Logo>
         <Nav>
-          <NavLink href="#about">About</NavLink>
-          <NavLink href="#skills">Skills</NavLink>
-          <NavLink href="#projects">Projects</NavLink>
+          <NavLink href='#about'>About</NavLink>
+          <NavLink href='#skills'>Skills</NavLink>
+          <NavLink href='#projects'>Projects</NavLink>
           <NavLink href='#contact'>Contact Me</NavLink>
         </Nav>
         <SocialMediaIcons>
-          <SocialMediaIcon href={personalInfo.linkedIn} target="display"><LinkedInIcon /></SocialMediaIcon>
-          <SocialMediaIcon href={personalInfo.github} target="display"><GitHubIcon /></SocialMediaIcon>
-          <SocialMediaIcon onClick={()=> handlePopUp(emailPrompt)} target="display"><EmailIcon /></SocialMediaIcon>
-          <SocialMediaIcon onClick={()=> handlePopUp(phonePrompt)} target="display"><PhoneIcon /></SocialMediaIcon>
+          <SocialMediaIcon href={personalInfo.linkedIn} target='display'><LinkedInIcon /></SocialMediaIcon>
+          <SocialMediaIcon href={personalInfo.github} target='display'><GitHubIcon /></SocialMediaIcon>
+          <SocialMediaIcon onClick={()=> handlePopUp(emailPrompt)} target='display'><EmailIcon /></SocialMediaIcon>
+          <SocialMediaIcon onClick={()=> handlePopUp(phonePrompt)} target='display'><PhoneIcon /></SocialMediaIcon>
         </SocialMediaIcons>
         <Copyright>
           &copy; 2023 Adam Razmus. All rights reserved.
